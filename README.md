@@ -21,7 +21,7 @@ The code is organized modularly into the following files:
 - `test.cpp` – Unit tests (using doctest).
 - `makefile` – Contains all required build/test commands.
 - `README.md` – This file.
-- `doctest.h`
+- `doctest.h`.
 ##
 ## Namespace and Class
 All classes are encapsulated in a namespace called `matrix`.
