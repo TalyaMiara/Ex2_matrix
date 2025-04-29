@@ -19,6 +19,9 @@ The code is organized modularly into the following files:
 - `SquareMat.cpp` – Implementation of the class functions and overloaded operators.
 - `main.cpp` – Demonstration of class usage.
 - `test.cpp` – Unit tests (using doctest).
+- `rows.cpp`-Implementation of the class functions and overloaded operators.
+                in use for the operator [][].
+- `rows.hpp`-Class declaration.
 - `makefile` – Contains all required build/test commands.
 - `README.md` – This file.
 - `doctest.h`.

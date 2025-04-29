@@ -242,11 +242,11 @@ SquareMat SquareMat::operator~(){
 }
 
 // mat[i] - give acsses to the item in the position [i][j] with mat[i][j] 
-double* SquareMat::operator[](int index){
+Rows SquareMat::operator[](int index){
     if(index<0||this->n<=index){
         throw std::invalid_argument("The index must be bewteen 0 to rows -1");
     }
-    return this->mat[index];
+    return Rows(this->n, this->mat[index]);
 }
 
 // mat1 == mat2

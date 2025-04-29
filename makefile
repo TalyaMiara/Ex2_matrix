@@ -2,8 +2,8 @@
 CXX=clang++
 CXXFLAGS=-std=c++2a -g -Wall -Wextra
 TARGET=main
-SRCS=SquareMat.cpp
-HEADERS=SquareMat.hpp
+SRCS=SquareMat.cpp rows.cpp
+HEADERS=SquareMat.hpp rows.hpp
 OBJS=$(SRCS:.cpp=.o)
 TEST_TARGET=test_run
 TEST_SRC = test.cpp

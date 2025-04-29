@@ -318,10 +318,12 @@ TEST_SUITE("SquareMat"){
 
         SUBCASE("NEGATIVE INDEX") {
             CHECK_THROWS_WITH(mat[-1],"The index must be bewteen 0 to rows -1");
+            CHECK_THROWS_WITH(mat[0][-1],"The index must be bewteen 0 to cols -1");
         }
 
         SUBCASE("OUT OF BOUNDS INDEX") {
             CHECK_THROWS_WITH(mat[2],"The index must be bewteen 0 to rows -1");
+            CHECK_THROWS_WITH(mat[0][2],"The index must be bewteen 0 to cols -1");
         }
     }
     TEST_CASE("== and !="){

@@ -4,6 +4,7 @@
 #define SQUAREMAT_HPP
 #include <iostream>
 #include <cmath>
+#include "rows.hpp"
 namespace matrix{
     class SquareMat{
         double** mat;
@@ -35,8 +36,8 @@ namespace matrix{
             //--n
             SquareMat& operator--();
             SquareMat operator~();
-            double* operator[](int index);
-            //במטלה הזאת מטריצות הן שוות אם סכום האיברים שלהם זהה.
+            Rows operator[](int index);
+            //in this task matrix is equal if the sum of the values in each matrix is equall
             bool operator==(const SquareMat& other);
             bool operator!=(const SquareMat& other);
             // משווה בין שתי מטריצות. מטריצה א' גדולה ממטריצה ב' אם סכום האיברים של מטריצה א' גדול מסכום האיברים של מטריצה ב'.
